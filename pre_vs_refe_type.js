@@ -29,7 +29,7 @@ console.log("array 1",array1);
 console.log("array 2",array2);
 
 
-//how to clone array
+//--------------------------- how to clone array -------------------------------
 
 
 // using same value
@@ -63,3 +63,14 @@ x1.push("x4");
 console.log("after pushing element to x 1");
 console.log("x1",x1);
 console.log("x2",x2);
+
+// using spread operator
+
+let y1 = ["y1","y2","y3"];
+let y2 = [...y1];
+
+y1.push("y4");
+
+console.log("after pushing element to y 1");
+console.log("y1",y1);
+console.log("y2",y2);
