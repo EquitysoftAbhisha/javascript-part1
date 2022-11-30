@@ -1,19 +1,32 @@
+// use strict use for strict mode
+
 " use strict ";
+
+// variable declare usring var
 
 var firstname = "Abhisha";
 
-// console.log(firstname);
+console.log(firstname);
+
+//how to convert string in uppercase 
 
 let lastName = "patel";
 
 lastName = lastName.toUpperCase();
 
-// console.log(lastName);
+console.log(lastName);
 
 var add = 50 ;
 // console.log(add + 10);
 
-// nested if
+// type of if else or if
+
+        // if else
+        //nested if
+        //if else if leader
+
+
+//------------------------ nested if ---------------------------
 
 // let winingnuber = 26;
 
@@ -33,6 +46,8 @@ var add = 50 ;
 //     }
 // }
 
+// ----------------- if else if leader -------------------
+
 // let tempInDegree = 26 ;
 
 // if(tempInDegree < 0){
@@ -48,6 +63,8 @@ var add = 50 ;
 // }else{
 //     console.log("too hot!!");
 // }
+
+//------------------- switch case ----------------------
 
 // let day = 0;
 
@@ -76,6 +93,8 @@ var add = 50 ;
 //         break;
 
 // }
+
+// ----------------------- while loop -----------------------------
 
 // let i = 0;
 
