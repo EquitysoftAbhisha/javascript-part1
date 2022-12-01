@@ -154,5 +154,62 @@ myApp();
             const answer = addall(1,2,3,4,5,6);
             console.log(answer);
 
-        
-        
+    // ====== parameter destructuring ======
+
+        // use in object
+
+            const person = {
+                firstname : "abhisha",
+                gender : "female"
+            }
+
+        // ---- using normal way ----
+
+            // function printDetails(obj){
+            //     
+            //     console.log(obj.firstname);
+            //     console.log(obj.gender);
+
+            // }
+
+        // ---- using parameter destructuring way ----
+
+            function printDetails({firstname,gender}){
+                console.log(firstname);
+                console.log(gender);
+
+            }
+
+            printDetails(person); 
+            
+    // ======= callback functions =======
+
+        function myFunc1(name){
+
+            console.log("inside my Func 1");
+            console.log(`your name is ${name}`);
+
+        }
+
+        function myFunc2(callback){
+
+            console.log("hello there i am a function and i can...");
+            callback("Abhisha");
+
+        }
+        myFunc2(myFunc1);
+    
+
+    // ======= function returning function =======
+
+
+        function myFunc(){
+
+            return function(){
+
+                return "hello world";
+
+            }
+        }
+        const answ = myFunc();
+        console.log(answ());
