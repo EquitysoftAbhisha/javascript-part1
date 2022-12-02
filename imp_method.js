@@ -99,31 +99,87 @@
         // realistick example
 
 
-        const users1 = [
+            const users1 = [
 
-            {
-                firstname : "abhisha",
-                age : 23
-            },
+                {
+                    firstname : "abhisha",
+                    age : 23
+                },
 
-            {
-                firstname : "zeel",
-                age : 21
-            },
+                {
+                    firstname : "zeel",
+                    age : 21
+                },
 
-            {
-                firstname : "nency",
-                age : 22
-            },
+                {
+                    firstname : "nency",
+                    age : 22
+                },
 
-        ]
-    
-        const usersName =  users1.map(user => {
-            
-            return user.firstname;
+            ]
         
-        });
+            const usersName =  users1.map(user => {
+                
+                return user.firstname;
+            
+            });
 
-        console.log(usersName);
+            console.log(usersName);
 
         // -- filter --
+
+            const arrays = [1,2,3,4,5,6];
+
+            const evenNumber = arrays.filter(array =>{
+
+                return array % 2 === 0 ;
+
+            });
+
+            console.log(evenNumber);
+
+        // -- reduce --
+
+            const n1s = [1,2,3,4,5,6,7,8];
+
+            const sum = n1s.reduce((x,y) => {
+
+                return x + y ;
+
+            });
+
+            console.log(sum);
+    
+        // realistick example
+
+            const userCart = [
+
+                {
+                    productId : 1,
+                    productName : "mobile",
+                    price : 25000
+                },
+
+                {
+                    productId : 2,
+                    productName : "laptop",
+                    price : 95000
+                },
+
+                {
+                    productId : 3,
+                    productName : "Tv",
+                    price : 45000
+                }
+
+            ];
+
+            const totalAmount = userCart.reduce((totalPrice , currentProduct) => {
+
+                return currentProduct.price + totalPrice  ;
+
+            },0);
+
+            console.log(totalAmount);
+    
+        

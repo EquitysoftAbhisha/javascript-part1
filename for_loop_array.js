@@ -80,7 +80,9 @@ const myarray = ["value1","value2","value3","value4"];
 // short variable declaration
 
 let [var1,var2,var3,...mynewarray] = myarray;
+
 // let mynewarray = myarray.slice(2);
+
 console.log(mynewarray);
 console.log("value of myvar1",var1);
 console.log("value of myvar2",var2);
