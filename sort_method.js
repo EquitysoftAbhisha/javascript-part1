@@ -221,3 +221,94 @@
         myArray2.splice(1,1,5);
 
         console.log(myArray2);
+
+    // iterables 
+
+        // string and array are iterable
+
+        // objects are not iterable
+        
+            const firstName = "Abhisha"; // string example
+
+            for(let char of firstName){
+
+                console.log(char);
+
+            }
+
+            const items = ['item1','item2','item3','item4']; // array example
+
+            for(let item of items){
+
+                console.log(item);
+
+            }
+
+
+            // const item = {
+
+            //     'key1' : 'value1',
+            //     'key2' : 'value2'
+            // }                               // object example
+            //                                 // object not iterable
+
+            // for(let i of item){
+
+            //     console.log(i);
+
+            // }
+
+    // Array like Object
+
+        // -> which have length property
+        // -> and which we can access from index
+        // -> For example :- string
+
+        const lastName = "bhesaniya"
+
+        console.log(lastName.length);
+
+        console.log(lastName[2]);
+
+    // sets (it is iterable)
+
+        // -> store the data
+        // -> sets also have its own method
+        // -> no index-based access
+        // -> order is not gauranted
+        // -> unique items only(no duplicatea value allowed)
+
+        const num = new Set([1,2,3,4,5]);
+        console.log(num);
+
+        const example = new Set();
+        
+        example.add(1);
+        example.add(2);
+        example.add(num);
+        example.add([3,4,5,6]);
+
+        // if(example.has(1)){
+        //     console.log("1 is present");
+        // }else{
+        //     console.log("1 is not present");
+        // }
+
+        // console.log(example);
+
+        for(let exe of example){
+            console.log(exe);
+        }
+
+        const myarray = [1,2,3,3,4,5,5,6,6,7,7,8,8,9];
+
+        const uniqueElement = new Set(myarray);
+
+        console.log(uniqueElement);
+
+        let length = 0 ; // count length for unique length
+         
+        for(let element of uniqueElement){
+            length ++;
+        }
+        console.log(length);
