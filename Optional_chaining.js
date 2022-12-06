@@ -87,6 +87,12 @@
             const func = about.bind(user3,"gitar","kishorda");
             func();
        
+       // dont do this mistake
+       
+       // user1.about();
+
+            // const myfunc = user1.about.bind(user1);
+            // myfunc();
 
       
 
